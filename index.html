@@ -12,17 +12,17 @@
     <header>
       <div class="app-header">
         <a href="" class="asensus-logo"
-          ><img src="public/asensus-logo.png" alt="asensus logo"
+          ><img src="public/asensus-logo-white.svg" alt="asensus logo"
         /></a>
         <form action="" class="search-form">
           <input type="search" class="search" placeholder="Search..." />
           <button type="submit" class="search-btn">Search</button>
         </form>
         <a href="#"
-          ><img src="public/notification-icon.png" alt="notification bell"
+          ><img src="public/notification-bell-white.svg" alt="notification bell"
         /></a>
-        <a href="#" class="user-icon"
-          ><img src="public/user-icon.png" alt="profile"
+        <a href="#" class="margin-right"
+          ><img src="public/user-white.svg" alt="profile"
         /></a>
       </div>
       <!-- Live, Me, Story Analytics, Competitors, Products, Activity, Saved Views, Advanced Search -->
@@ -32,8 +32,8 @@
             >Live
             <span>
               <img
-                class="live-icon margin-left"
-                src="public/live-icon.png"
+                class="live-icon margin-left-sm"
+                src="public/live.svg"
                 alt="live icon"
               />
             </span>
@@ -42,9 +42,7 @@
           <a class="nav-link" href="/pages/story-analytics.html"
             >Story Analytics</a
           >
-          <a class="nav-link" href="/pages/competitors.html"
-            >Competitors</a
-          >
+          <a class="nav-link" href="/pages/competitors.html">Competitors</a>
           <a class="nav-link" href="/pages/products.html">Products</a>
           <a class="nav-link" href="/pages/activity.html">Activity</a>
           <!-- <div class="dropdown-nav">
@@ -63,7 +61,7 @@
           <a class="nav-link" href="/pages/saved-views.html"
             >Saved Views
             <span>
-              <img src="public/drop-down.png" alt="drop down button" /> </span
+              <img src="public/down-arrow-white.svg" alt="drop down button" /> </span
           ></a>
           <a class="nav-link" href="/pages/advanced-search.html"
             >Advanced Search</a
@@ -71,6 +69,67 @@
         </div>
       </nav>
     </header>
+
+    <!-- Click on Live > Dropdown filter menu appears -->
+    <div class="live-filter-container">
+      <form class="live-filer-form">
+        <div class="live-filter-wrapper">
+          <select name="regions" id="regions">
+            <option value="all-regions">All regions</option>
+            <option value="emea">EMEA</option>
+          </select>
+          <div class="option-selected-container">
+            <p class="live-option">
+              EMEA
+              <span class="delete-icon">
+                <img
+                  src="/public/delete.svg"
+                  alt="delete icon"
+
+                />
+              </span>
+            </p>
+          </div>
+        </div>
+        <div class="live-filter-wrapper">
+          <select name="teams" id="teams">
+            <option value="all-teams">All teams</option>
+            <option value="product-sales">Product Sales</option>
+            <option value="client-retention">Client Retention</option>
+          </select>
+          <div class="option-selected-container">
+            <p class="live-option">Product Sales <span>X</span></p>
+            <p class="live-option">Client Retention <span>X</span></p>
+          </div>
+        </div>
+        <div class="live-filter-wrapper">
+          <select name="templates" id="templates">
+            <option value="all-templates">All templates</option>
+            <option value="product-demo">Product Demo</option>
+          </select>
+          <div class="option-selected-container">
+            <p class="live-option">Product Demo <span>X</span></p>
+          </div>
+        </div>
+        <div>
+          <button class="save-view-btn">Save view</button>
+        </div>
+
+        <div class="live-filter-wrapper calender-container">
+          Add Calender Here
+        </div>
+      </form>
+    </div>
+    <!-- SVG -->
+    <div class="svg-container">
+    <img class="svg meetings" src="public/handshake-white.svg" alt="handshake">
+    <img class="svg av-sentiment" src="public/speech-bubble-white.svg" alt="handshake">
+    <img class="svg positive-stories" src="public/smiley-face-white.svg" alt="handshake">
+    <img class="svg negative-stories" src="public/sad-face-white.svg" alt="handshake">
+    <img class="svg " src="public/thumbs-up-black.svg" alt="thumb up icon">
+    <img class="svg " src="public/speech-bubble-black.svg" alt="speech bubble icon">
+    <img class="svg " src="public/share-black.svg" alt="share icon">
+    </div>
     <!-- Changes depending on nav option selected -->
     <main></main>
     <!-- Nothing yet -->

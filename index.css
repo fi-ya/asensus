@@ -12,7 +12,16 @@ html {
   font-size: 1rem;
   --primary-color: #222222;
   --secondary-color: #ffffff;
-  --tertiary-color:#2ECC71;
+  --tertiary-color:#3FFF2E; /* 3FFF2E / 2ECC71*/
+  --quaternary-color: #5013FF;
+  --quinary-color: #BDD0F4;
+  --senary-color:#EFEFEF;
+  --septenary-color:#888585;
+  --octonary-color:#FFE66B;
+  --nonary-color:#44A5FF;
+  --denary-color:#FFCB44;
+  --green-color: #00CB8E;
+  --red-color:#FF5252;
 }
 body {
   font-family: var(--main-font);
@@ -36,7 +45,7 @@ header{
     margin-right:auto;
     margin-left:4rem;
 }
-.user-icon{
+.margin-right{
     margin-right:4rem;
 }
 .search-form {
@@ -96,16 +105,96 @@ input[type="search"]:focus {
     color: var(--secondary-color);
     font-weight: 600;
 }
-.main-nav a:hover, .live-icon:hover{
+
+.main-nav a:first-child, .main-nav a:hover{
     color: var(--tertiary-color);
-    text-decoration: underline;
-}
-.margin-left{
-  margin-left: 0.3rem;
-}
-.saved-views-btn{
+    border-bottom: 0.25rem solid var(--tertiary-color);
 
 }
+.margin-left-sm{
+  margin-left: 0.3rem;
+}
+.margin-left-lg{
+  margin-left: 4rem;
+}
+/* Live Filter */
+.live-filter-container{
+  background-color: var(--senary-color);
+  min-height: 15vh;
+  padding:1rem 4rem;
+
+}
+.live-filer-form{
+  display: flex;
+  justify-content: flex-start;
+  gap:1rem;
+
+}
+.live-filter-wrapper{
+  display:flex;
+  flex-direction: column;
+  gap:0.5rem;
+}
+.calender-container{
+  margin-left:auto;
+  margin-right: 4rem;
+  background-color: var(--secondary-color);
+  padding: 1rem 4rem 1rem 1rem;
+}
+button.save-view-btn{
+  background-color: var(--quaternary-color);
+  color:var(--secondary-color);
+  border-radius: 0.25rem;
+  padding: 0.25em 0.5em;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.option-selected-container{
+  display: flex;
+  flex-direction: column;
+  align-content:space-between;
+  justify-content: center;
+  gap:1rem;
+}
+.live-option{
+  background-color: var(--quinary-color);
+  border-radius: 0.3rem;
+  padding: 0.25em 2em 0.25em 0.50em;
+}
+.delete-icon{
+  margin: 2rem 3rem;
+
+}
+.svg-container{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin:1rem;
+  gap:2rem;
+}
+.svg{
+
+  width: 3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+.meetings{
+background-color: var(--nonary-color);
+}
+.av-sentiment{
+background-color: var(--denary-color);
+}
+.positive-stories{
+background-color: var(--green-color);
+}
+.negative-stories{
+background-color: var(--red-color);
+
+
+}
+/* .saved-views-btn{
+
+} */
 /* @media (max-width:1200px) {
  .nav-container{
   margin: 0 0 0 3rem;
