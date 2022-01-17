@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --cursive-font: "Dawning of a New Day", cursive;
+  --main-font: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  --primary-color: #222222;
+  --secondary-color: #ffffff;
+  --tertiary-color:#2ECC71;
+}
+body {
+  font-family: var(--main-font);
+  line-height: 1.5;
+  /* min-width: 100vw; */
+}
+/* Header Styles */
+header{
+  background-color: var(--primary-color);
+}
+.app-header {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: calc(10px + 2vmin);
+  gap: 2rem;
+  border-bottom: 0.2rem solid var(--secondary-color);
+}
+.asensus-logo{
+    margin-right:auto;
+    margin-left:4rem;
+}
+.user-icon{
+    margin-right:4rem;
+}
+.search-form {
+    display:flex;
+    background-color: var(--secondary-color);
+  border-radius: 0.3rem;
+}
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+button[type="submit"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 2rem;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: white url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* button[type="submit"]:hover {
+  opacity: 1;
+} */
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+  box-shadow: 0 0 3px 0 #1183d6;
+  border-color: #1183d6;
+  outline: none;
+}
+/* Top Nav Styles */
+.nav-container{
+  margin: 0 3rem 0 3rem;
+}
+.nav-link{
+  margin: 0 1rem;
+}
+.main-nav{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem 0;
+}
+.main-nav a{
+    display: flex;
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+.main-nav a:hover, .live-icon:hover{
+    color: var(--tertiary-color);
+    text-decoration: underline;
+}
+.margin-left{
+  margin-left: 0.3rem;
+}
+.saved-views-btn{
+
+}
+/* @media (max-width:1200px) {
+ .nav-container{
+  margin: 0 0 0 3rem;
+}
+.main-nav a{
+  font-size: 0.8rem;
+}
+} */
