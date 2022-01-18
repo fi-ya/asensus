@@ -31,9 +31,9 @@ body {
 /* Header Styles */
 header{
   background-color: var(--primary-color);
+  min-height: 8rem;
 }
 .app-header {
-  min-height: 10vh;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -93,10 +93,13 @@ input[type="search"]:focus {
 .nav-link{
   margin: 0 1rem;
 }
-.main-nav{
+.flex-start{
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+.main-nav{
     padding: 1rem 0;
 }
 .main-nav a{
@@ -117,10 +120,13 @@ input[type="search"]:focus {
 .margin-left-lg{
   margin-left: 4rem;
 }
+.margin-top{
+  margin-top: 2rem;
+}
 /* Live Filter */
 .live-filter-container{
   background-color: var(--senary-color);
-  min-height: 15vh;
+  min-height: 9rem;
   padding:1rem 4rem;
 
 }
@@ -165,15 +171,95 @@ button.save-view-btn{
   margin: 2rem 3rem;
 
 }
+/* Status Bar */
+.stats-bar-container{
+  display: flex;
+flex-direction: row;
+justify-content: flex-start;
+padding: 0px 64px;
+
+
+  position: relative;
+  width:15.625rem;
+  height:8.375rem;
+  gap:1rem;
+}
+.status-bar-item{
+position: absolute;
+width: 250px;
+height: 134px;
+left: 64px;
+top: 0px;
+
+background: #FFFFFF;
+border: 0.25px solid #D0D0D0;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 0.25rem;
+
+}
+.stats-bar-data{
+  position: absolute;
+  /* padding:1rem 1.5rem; */
+  height: 72px;
+width: 225.60975646972656px;
+left: 24.3902587890625px;
+top: 16px;
+border-radius: 0;
+
+}
+.font-sm{
+  font-size: 0.875rem;
+}
+.font-med{
+  font-size:2.25rem;
+}
 .svg-container{
   display: flex;
   justify-content: center;
   align-content: center;
-  margin:1rem;
-  gap:2rem;
+  /* margin:1rem 2rem 4rem 11rem; */
+  height:3.125rem;
+  width:3.125rem;
+  position: absolute;
+  left: 71.2%;
+right: 8.8%;
+top: 12.69%;
+bottom: 50%;
+
+}
+.progress-bar-container{
+  position: absolute;
+  height: 27px;
+width: 206px;
+left: 22px;
+top: 96px;
+border-radius: 0px;
+font-size: 0.688rem;
+
+}
+.progress-bar{
+  position: absolute;
+width: 201px;
+height: 8px;
+left: 2px;
+top: 0px;
+border-radius: 0px;
+}
+.progress-bar-description{
+position: absolute;
+width: 201px;
+height: 6px;
+left: 2px;
+top: 13px;
+border-radius: 0px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 0px;
+
 }
 .svg{
-
   width: 3rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -190,8 +276,13 @@ background-color: var(--green-color);
 .negative-stories{
 background-color: var(--red-color);
 
-
 }
+
+/* Story Feed */
+
+/* Data visualisation */
+
+
 /* .saved-views-btn{
 
 } */

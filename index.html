@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="wioptgrouph=device-width, initial-scale=1.0"
+    />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Asensus</title>
@@ -11,23 +14,26 @@
     <!-- Asensus logo / search input / notification bell/ profile -->
     <header>
       <div class="app-header">
-        <a href="" class="asensus-logo"
-          ><img src="public/asensus-logo-white.svg" alt="asensus logo"
-        /></a>
+        <a href="" class="asensus-logo">
+          <img src="public/asensus-logo-white.svg" alt="asensus logo" />
+        </a>
         <form action="" class="search-form">
           <input type="search" class="search" placeholder="Search..." />
           <button type="submit" class="search-btn">Search</button>
         </form>
-        <a href="#"
-          ><img src="public/notification-bell-white.svg" alt="notification bell"
-        /></a>
+        <a href="#">
+          <img
+            src="public/notification-bell-white.svg"
+            alt="notification bell"
+          />
+        </a>
         <a href="#" class="margin-right"
           ><img src="public/user-white.svg" alt="profile"
         /></a>
       </div>
       <!-- Live, Me, Story Analytics, Competitors, Products, Activity, Saved Views, Advanced Search -->
       <nav class="nav-container">
-        <div class="main-nav">
+        <div class="main-nav flex-start">
           <a class="nav-link" href="/index.html"
             >Live
             <span>
@@ -45,6 +51,7 @@
           <a class="nav-link" href="/pages/competitors.html">Competitors</a>
           <a class="nav-link" href="/pages/products.html">Products</a>
           <a class="nav-link" href="/pages/activity.html">Activity</a>
+
           <!-- <div class="dropdown-nav">
           <button class="saved-views-btn">
             Saved Views
@@ -53,6 +60,21 @@
             </span>
           </button>
           <div class="saved-views-content">
+            <select name="saved-views" value="saved-views">
+             <optgroup label="Home">
+                <option value="us-team-demos">US Team Demos</option>
+                <option value="6-month-report">6 Month Report</option>
+                <option value="quarterly-report">Quarterly Report</option>
+                </optgroup>
+                <optgroup label="Competitors">
+                <option value="no-1-competitors">No 1 Competitor</option>
+                <option value="sally-fielding">Sally Fielding</option>
+                <option value="sally-jobs">Sally Jobs</option>
+                </optgroup>
+                <optgroup label="Story Feed" >
+                <option value="week-so-far">Week so far...</option>
+              </optgroup>
+              </select>
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
             <a href="#">Link 3</a>
@@ -61,7 +83,10 @@
           <a class="nav-link" href="/pages/saved-views.html"
             >Saved Views
             <span>
-              <img src="public/down-arrow-white.svg" alt="drop down button" /> </span
+              <img
+                src="public/down-arrow-white.svg"
+                alt="drop down button"
+              /> </span
           ></a>
           <a class="nav-link" href="/pages/advanced-search.html"
             >Advanced Search</a
@@ -82,11 +107,7 @@
             <p class="live-option">
               EMEA
               <span class="delete-icon">
-                <img
-                  src="/public/delete.svg"
-                  alt="delete icon"
-
-                />
+                <img src="/public/delete.svg" alt="delete icon" />
               </span>
             </p>
           </div>
@@ -120,20 +141,122 @@
         </div>
       </form>
     </div>
+
+    <!-- Changes depending on nav option selected -->
+    <main>
+      <section class="stats-bar-container margin-top">
+        <!-- Meeting Stats -->
+        <article class="status-bar-item">
+          <div class="stats-bar-data">
+          <p class="font-sm">Meetings</p>
+          <p class="font-med">27</p>
+          </div>
+        <div class="svg-container">
+          <img
+            class="svg meetings"
+            src="public/handshake-white.svg"
+            alt="handshake"
+          />
+        </div>
+        <div class="progress-bar-container">
+        <progress class="progress-bar" id="meetings-stats" value="75" max="100"> 75% </progress>
+        <div class="progress-bar-description">
+        <label for="meetings-stats">Previous period</label>
+        <p>75%</p>
+        </div>
+        </div>
+      </article>
+      <!-- Av. Sentiment Stats -->
+      <article class="status-bar-item">
+          <div class="stats-bar-data">
+          <p class="font-sm">Av. Sentiment</p>
+          <p class="font-med">87</p>
+          </div>
+        <div class="svg-container">
+          <<img
+        class="svg av-sentiment"
+        src="public/speech-bubble-white.svg"
+        alt="handshake"
+      />
+        </div>
+        <div class="progress-bar-container">
+        <progress class="progress-bar" id="av-sentiments" value="75" max="100"> 75% </progress>
+        <div class="progress-bar-description">
+        <label for="av-sentiments">Previous period</label>
+        <p>75%</p>
+        </div>
+        </div>
+      </article>
+      <!-- Positive Stories Stats -->
+      <article class="status-bar-item">
+          <div class="stats-bar-data">
+          <p class="font-sm">Positive Stories</p>
+          <p class="font-med">67</p>
+          </div>
+        <div class="svg-container">
+          <img
+        class="svg positive-stories"
+        src="public/smiley-face-white.svg"
+        alt="handshake"
+      />
+        </div>
+        <div class="progress-bar-container">
+        <progress class="progress-bar" id="positive-stories" value="75" max="100"> 75% </progress>
+        <div class="progress-bar-description">
+        <label for="positive-stories">Previous period</label>
+        <p>75%</p>
+        </div>
+        </div>
+      </article>
+      <!-- Negative Stories Stats -->
+      <article class="status-bar-item">
+          <div class="stats-bar-data">
+          <p class="font-sm">Negative Stories</p>
+          <p class="font-med">67</p>
+          </div>
+        <div class="svg-container">
+          <img
+        class="svg negative-stories"
+        src="public/sad-face-white.svg"
+        alt="handshake"
+      />
+        </div>
+        <div class="progress-bar-container">
+        <progress class="progress-bar" id="negative-stories" value="75" max="100"> 75% </progress>
+        <div class="progress-bar-description">
+        <label for="negative-stories">Previous period</label>
+        <p>75%</p>
+        </div>
+        </div>
+      </article>
+
+        </section>
+      </section>
+      <section class="story-feed-container"></section>
+      <section class="data-container">
+        <article class="overall-sentiment-container"></article>
+        <article class=""></article>
+      </section>
+      <section class="word-cloud-container">
+        <article class="positive-cloud-container"></article>
+        <article class="negative-cloud-container"></article>
+      </section>
+    </main>
+
     <!-- SVG -->
     <div class="svg-container">
-    <img class="svg meetings" src="public/handshake-white.svg" alt="handshake">
-    <img class="svg av-sentiment" src="public/speech-bubble-white.svg" alt="handshake">
-    <img class="svg positive-stories" src="public/smiley-face-white.svg" alt="handshake">
-    <img class="svg negative-stories" src="public/sad-face-white.svg" alt="handshake">
-    <img class="svg " src="public/thumbs-up-black.svg" alt="thumb up icon">
-    <img class="svg " src="public/speech-bubble-black.svg" alt="speech bubble icon">
-    <img class="svg " src="public/share-black.svg" alt="share icon">
+
+
+
+      <img class="svg" src="public/thumbs-up-black.svg" alt="thumb up icon" />
+      <img
+        class="svg"
+        src="public/speech-bubble-black.svg"
+        alt="speech bubble icon"
+      />
+      <img class="svg" src="public/share-black.svg" alt="share icon" />
     </div>
-    <!-- Changes depending on nav option selected -->
-    <main></main>
-    <!-- Nothing yet -->
-    <footer></footer>
+
     <script src="index.js"></script>
   </body>
 </html>
