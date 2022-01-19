@@ -2,12 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="wioptgrouph=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link rel="stylesheet" type="text/css" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Asensus</title>
   </head>
   <body>
@@ -148,96 +151,136 @@
         <!-- Meeting Stats -->
         <article class="status-bar-item">
           <div class="stats-bar-data">
-          <p class="font-sm">Meetings</p>
-          <p class="font-med">27</p>
+            <p class="status-title">Meetings</p>
+            <p class="stats-num">27</p>
           </div>
-        <div class="svg-container">
-          <img
-            class="svg meetings"
-            src="public/handshake-white.svg"
-            alt="handshake"
-          />
-        </div>
-        <div class="progress-bar-container">
-        <progress class="progress-bar" id="meetings-stats" value="75" max="100"> 75% </progress>
-        <div class="progress-bar-description">
-        <label for="meetings-stats">Previous period</label>
-        <p>75%</p>
-        </div>
-        </div>
-      </article>
-      <!-- Av. Sentiment Stats -->
-      <article class="status-bar-item">
+          <div class="svg-container">
+            <img
+              class="svg meetings"
+              src="public/handshake-white.svg"
+              alt="handshake"
+            />
+          </div>
+          <div class="progress-bar-container">
+            <progress
+              class="progress-bar"
+              id="meetings-stats"
+              value="75"
+              max="100"
+            >
+              75%
+            </progress>
+            <div class="progress-bar-description">
+              <label class="progress-bar-label" for="meetings-stats"
+                >Previous period</label
+              >
+              <p class="progress-bar-result">75%</p>
+            </div>
+          </div>
+        </article>
+        <!-- Av. Sentiment Stats -->
+        <article class="status-bar-item">
           <div class="stats-bar-data">
-          <p class="font-sm">Av. Sentiment</p>
-          <p class="font-med">87</p>
+            <p class="status-title">Av. Sentiment</p>
+            <p class="stats-num">87</p>
           </div>
-        <div class="svg-container">
-          <<img
-        class="svg av-sentiment"
-        src="public/speech-bubble-white.svg"
-        alt="handshake"
-      />
-        </div>
-        <div class="progress-bar-container">
-        <progress class="progress-bar" id="av-sentiments" value="75" max="100"> 75% </progress>
-        <div class="progress-bar-description">
-        <label for="av-sentiments">Previous period</label>
-        <p>75%</p>
-        </div>
-        </div>
-      </article>
-      <!-- Positive Stories Stats -->
-      <article class="status-bar-item">
+          <div class="svg-container">
+            <img
+              class="svg av-sentiment"
+              src="public/speech-bubble-white.svg"
+              alt="handshake"
+            />
+          </div>
+          <div class="progress-bar-container">
+            <progress
+              class="progress-bar"
+              id="av-sentiments"
+              value="75"
+              max="100"
+            >
+              75%
+            </progress>
+            <div class="progress-bar-description">
+              <label class="progress-bar-label" for="av-sentiments"
+                >Previous period</label
+              >
+              <p class="progress-bar-result">75%</p>
+            </div>
+          </div>
+        </article>
+        <!-- Positive Stories Stats -->
+        <article class="status-bar-item">
           <div class="stats-bar-data">
-          <p class="font-sm">Positive Stories</p>
-          <p class="font-med">67</p>
+            <p class="status-title">Positive Stories</p>
+            <p class="stats-num">67</p>
           </div>
-        <div class="svg-container">
-          <img
-        class="svg positive-stories"
-        src="public/smiley-face-white.svg"
-        alt="handshake"
-      />
-        </div>
-        <div class="progress-bar-container">
-        <progress class="progress-bar" id="positive-stories" value="75" max="100"> 75% </progress>
-        <div class="progress-bar-description">
-        <label for="positive-stories">Previous period</label>
-        <p>75%</p>
-        </div>
-        </div>
-      </article>
-      <!-- Negative Stories Stats -->
-      <article class="status-bar-item">
+          <div class="svg-container">
+            <img
+              class="svg positive-stories"
+              src="public/smiley-face-white.svg"
+              alt="handshake"
+            />
+          </div>
+          <div class="progress-bar-container">
+            <progress
+              class="progress-bar"
+              id="positive-stories"
+              value="75"
+              max="100"
+            >
+              75%
+            </progress>
+            <div class="progress-bar-description">
+              <label class="progress-bar-label" for="positive-stories"
+                >Previous period</label
+              >
+              <p class="progress-bar-result">75%</p>
+            </div>
+          </div>
+        </article>
+        <!-- Negative Stories Stats -->
+        <article class="status-bar-item">
           <div class="stats-bar-data">
-          <p class="font-sm">Negative Stories</p>
-          <p class="font-med">67</p>
+            <p class="status-title">Negative Stories</p>
+            <p class="stats-num">67</p>
           </div>
-        <div class="svg-container">
-          <img
-        class="svg negative-stories"
-        src="public/sad-face-white.svg"
-        alt="handshake"
-      />
-        </div>
-        <div class="progress-bar-container">
-        <progress class="progress-bar" id="negative-stories" value="75" max="100"> 75% </progress>
-        <div class="progress-bar-description">
-        <label for="negative-stories">Previous period</label>
-        <p>75%</p>
-        </div>
-        </div>
-      </article>
-
-        </section>
+          <div class="svg-container">
+            <img
+              class="svg negative-stories"
+              src="public/sad-face-white.svg"
+              alt="handshake"
+            />
+          </div>
+          <div class="progress-bar-container">
+            <progress
+              class="progress-bar negative-stories-bar"
+              id="negative-stories"
+              value="75"
+              max="100"
+            >
+              75%
+            </progress>
+            <div class="progress-bar-description">
+              <label class="progress-bar-label" for="negative-stories"
+                >Previous period</label
+              >
+              <p class="progress-bar-result">75%</p>
+            </div>
+          </div>
+        </article>
       </section>
-      <section class="story-feed-container"></section>
+      <!-- Story/Meetings Feed -->
+      <section class="feed-container">
+
+      </section>
+
       <section class="data-container">
         <article class="overall-sentiment-container"></article>
-        <article class=""></article>
+        <article class="empty-container"></article>
       </section>
-      <section class="word-cloud-container">
+
+      <!-- Word Cloud -->
+      <section class="word-cloud-container ">
         <article class="positive-cloud-container"></article>
         <article class="negative-cloud-container"></article>
       </section>
@@ -245,9 +288,6 @@
 
     <!-- SVG -->
     <div class="svg-container">
-
-
-
       <img class="svg" src="public/thumbs-up-black.svg" alt="thumb up icon" />
       <img
         class="svg"
