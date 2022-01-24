@@ -40,7 +40,7 @@ header {
   gap: 2rem;
   border-bottom: 0.2rem solid var(--secondary-color);
 }
-.asensus-logo {
+.margin-left {
   margin-right: auto;
   margin-left: 4rem;
 }
@@ -146,12 +146,14 @@ input[type='search']:focus {
   background-color: var(--secondary-color);
   padding: 1rem 4rem 1rem 1rem;
 }
-button.save-view-btn {
+button.view-btn {
   background-color: var(--quaternary-color);
   color: var(--secondary-color);
   border-radius: 0.25rem;
-  padding: 0.25em 0.5em;
+  padding: 0.5em 0.75em;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 0.875rem;
+
 }
 .option-selected-container {
   display: flex;
@@ -193,16 +195,16 @@ button.save-view-btn {
   margin-right: 1rem;
 }
 .stats-bar-data {
-  position:relative;
+  position: relative;
   /* height: 4.5rem; */
   /* width: 225.60975646972656px; */
   /* width:100%; */
   left: 25px;
   top: 16px;
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap:1rem;
+  gap: 1rem;
 }
 .status-title {
   /* height: 16px;
@@ -238,7 +240,7 @@ button.save-view-btn {
 }
 .svg {
   width: 3rem;
-  padding: 0.5rem;
+  padding: 0.5em;
   border-radius: 0.5rem;
 }
 .meetings {
@@ -267,47 +269,47 @@ button.save-view-btn {
   width: 201px;
   height: 8px;
 } */
-.progress-bar{
+.progress-bar {
   position: relative;
   display: flex;
   width: 201px;
-  height:0.25rem;
+  height: 0.25rem;
   margin: 0.25rem 0rem;
 }
-.progress-bar-value{
+.progress-bar-value {
   position: relative;
   /* width:75%; */
   border-radius: 0.25rem;
 }
-.progress-bar-max{
+.progress-bar-max {
   position: relative;
   /* width:25%; */
-  background: #E3E3E3;
+  background: #e3e3e3;
   border-radius: 0.25rem;
 }
-#meetings-progress-width{
-  width:25%;
+#meetings-progress-width {
+  width: 25%;
 }
-#meetings-progress-max{
-  width:75%;
+#meetings-progress-max {
+  width: 75%;
 }
-#av-sentiment-progress-width{
-  width:50%;
+#av-sentiment-progress-width {
+  width: 50%;
 }
-#av-sentiment-progress-max{
-  width:50%;
+#av-sentiment-progress-max {
+  width: 50%;
 }
-#positive-stories-progress-width{
-  width:75%;
+#positive-stories-progress-width {
+  width: 75%;
 }
-#positive-stories-progress-max{
-  width:25%;
+#positive-stories-progress-max {
+  width: 25%;
 }
-#negative-stories-progress-width{
-  width:30%;
+#negative-stories-progress-width {
+  width: 30%;
 }
-#negative-stories-progress-max{
-  width:70%;
+#negative-stories-progress-max {
+  width: 70%;
 }
 .progress-bar-description {
   position: relative;
@@ -336,28 +338,28 @@ button.save-view-btn {
 
 /* Story Feed */
 .feed-container {
-  position:relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   height: 100vh;
-  width:90%;
+  width: 90%;
   margin: 2rem 4rem;
   background: var(--senary-color);
 }
-.tab{
-  overflow:hidden;
+.tab {
+  overflow: hidden;
   border-bottom: 1px solid var(--secondary-color);
   border-radius: 0.25rem;
   background-color: var(--senary-color);
-  width:100%;
+  width: 100%;
   /* display: flex;
   justify-content: flex-start;
   gap: 1rem; */
 }
-.tab button{
+.tab button {
   background-color: inherit;
-  float:left;
+  float: left;
   border: none;
   outline: none;
   cursor: pointer;
@@ -366,25 +368,144 @@ button.save-view-btn {
   font-size: 1rem;
   font-weight: 600;
 }
-.tab button:hover{
+.tab button:hover {
   background-color: var(--quaternary-color);
   color: var(--secondary-color);
 }
-.tab button.active{
+.tab button.active {
   background-color: var(--tertiary-color);
-
-
 }
-.tab-content{
-  display:none;
+.tab-content {
+  display: none;
   position: relative;
-  width:100%;
-  height:100%;
-  padding:0.375em 0.75em;
+  width: 100%;
+  height: 100%;
+  padding: 0.375em 0.75em;
   /* border: 1px solid #000;
   border-top: none; */
 }
+.feed-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  height: 2.125rem;
+  padding: 1rem; /* 0.625rem; */
+}
+.card-title {
+  font-weight: 700;
+  line-height: 0.875rem;
+  /* identical to box height */
+  text-align: center;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* margin: 0px 0.625rem; */
+}
+.card-score-container {
+  display: flex;
+  justify-content: center;
+  align-content: baseline;
+  /* gap: 0.5rem; */
+  height: 0.875rem;
+}
+.card-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+.positive {
+  background-color: var(--tertiary-color);
+}
+.negative {
+  background-color: var(--red-color);
+}
+.neutral {
+  background-color: var(--nonary-color);
+}
+.card-rating-score {
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0.5rem;
+  line-height: 0.875rem;
+}
+.card-stories-num {
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0px 0.5rem;
+  line-height: 0.875rem;
+}
+.card-date {
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 0px 0.5rem;
+  line-height: 0.875rem;
+}
+.feed-content-container {
+  background: var(--secondary-color);
+  height: 139px;
+  padding: 1rem; /* 0.625rem; */
+}
+.story-text {
+  line-height: 0.875rem;
+  /* padding: 1em; */
+  margin-bottom: 1.25rem;
+}
+.story-icon-container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  /* padding: 1em; */
+  margin: 3rem auto;
+}
 
+.margin-auto {
+  margin-right: auto;
+}
+.category-tag {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:0.25rem;
+  padding: 0.25em 0.5em;
+  margin: 0.5rem 0.25rem;
+  background-color: var(--quinary-color);
+  border-radius: 0.25rem;
+}
+.inline {
+  display: inline;
+}
+.meetings-content-container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  margin-bottom: 1rem;
+}
+.meeting-width {
+  width: 30rem;
+}
+.meetings-header {
+  font-weight: 700;
+  width: 100px;
+}
+
+.meetings-container {
+  height: 179px;
+}
+.margin-left-auto {
+  margin-left: auto;
+}
+/* -------------------------------------------------------------- */
 
 /* EXTRAAAAAAAAAAAAAA NOT ADDED*/
 

@@ -1,14 +1,16 @@
-function openFeed(event, feedName){
+function openFeed(event, feedName) {
+  const tabContent = document.getElementsByClassName('tab-content');
+  for (i = 0; i < tabContent.length; i++) {
+    tabContent[i].style.display = 'none';
+  }
 
-    const tabContent = document.getElementsByClassName("tab-content");
-    for (i = 0; i < tabContent.length; i++){
-        tabContent[i].style.display = "none";
-    }
-
-    const tabLinks = document.getElementsByClassName("tab-links");
-    for (i = 0; i < tabLinks.length; i++) {
-        tabLinks[i].className = tabLinks[i].className.replace(" active", "");
-    }
-    document.getElementById(feedName).style.display = "block";
-    event.currentTarget.className += " active";
+  const tabLinks = document.getElementsByClassName('tab-links');
+  for (i = 0; i < tabLinks.length; i++) {
+    tabLinks[i].className = tabLinks[i].className.replace(' active', '');
+  }
+  document.getElementById(feedName).style.display = 'block';
+  event.currentTarget.className += ' active';
 }
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();

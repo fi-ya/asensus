@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <title>Asensus</title>
@@ -17,7 +17,7 @@
     <!-- Asensus logo / search input / notification bell/ profile -->
     <header>
       <div class="app-header">
-        <a href="" class="asensus-logo">
+        <a href="" class="margin-left">
           <img src="public/asensus-logo-white.svg" alt="asensus logo" />
         </a>
         <form action="" class="search-form">
@@ -134,7 +134,7 @@
           </div>
         </div>
         <div>
-          <button class="save-view-btn">Save view</button>
+          <button class="view-btn">Save view</button>
         </div>
 
         <div class="live-filter-wrapper calender-container">
@@ -161,7 +161,10 @@
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
-              <div class="progress-bar-value meetings" id="meetings-progress-width"></div>
+              <div
+                class="progress-bar-value meetings"
+                id="meetings-progress-width"
+              ></div>
               <div class="progress-bar-max" id="meetings-progress-max"></div>
             </div>
 
@@ -195,10 +198,15 @@
             />
           </div>
           <div class="progress-bar-container">
-
             <div class="progress-bar">
-              <div class="progress-bar-value av-sentiment" id="av-sentiment-progress-width"></div>
-              <div class="progress-bar-max" id="av-sentiment-progress-width"></div>
+              <div
+                class="progress-bar-value av-sentiment"
+                id="av-sentiment-progress-width"
+              ></div>
+              <div
+                class="progress-bar-max"
+                id="av-sentiment-progress-width"
+              ></div>
             </div>
 
             <!-- <progress
@@ -232,8 +240,14 @@
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
-              <div class="progress-bar-value positive-stories" id="positive-stories-progress-width"></div>
-              <div class="progress-bar-max" id="positive-stories-progress-max"></div>
+              <div
+                class="progress-bar-value positive-stories"
+                id="positive-stories-progress-width"
+              ></div>
+              <div
+                class="progress-bar-max"
+                id="positive-stories-progress-max"
+              ></div>
             </div>
             <!-- <progress
               class="progress-bar"
@@ -266,10 +280,16 @@
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
-              <div class="progress-bar-value negative-stories" id="negative-stories-progress-width"></div>
-              <div class="progress-bar-max" id="negative-stories-progress-max"></div>
+              <div
+                class="progress-bar-value negative-stories"
+                id="negative-stories-progress-width"
+              ></div>
+              <div
+                class="progress-bar-max"
+                id="negative-stories-progress-max"
+              ></div>
             </div>
-                        <!-- <progress
+            <!-- <progress
               class="progress-bar negative-stories-bar"
               id="negative-stories"
               value="75"
@@ -288,23 +308,94 @@
       </section>
       <!-- Story/Meetings Feed -->
       <section class="feed-container">
-
         <!-- Tab Links -->
         <div class="tab">
-          <button class="tab-links" onclick="openFeed(event, 'stories')">Stories</button>
-          <button class="tab-links" onclick="openFeed(event, 'meetings')">Meetings</button>
+          <button class="tab-links" onclick="openFeed(event, 'stories')" id="defaultOpen">
+            Stories
+          </button>
+          <button class="tab-links" onclick="openFeed(event, 'meetings')">
+            Meetings
+          </button>
         </div>
-        <!-- Tab Content -->
 
+        <!-- Stories Content -->
         <div id="stories" class="tab-content">
-          <h3>Stories Feed</h3>
-          <p>insert - here </p>
-        </div>
-        <div id="meetings" class="tab-content">
-           <h3>Meetings Feed</h3>
-          <p>insert - here </p>
+            <div class="feed-card-header">
+              <h4 class="card-title">Adidas</h4>
+              <div class="card-score-container">
+                <div class="card-circle positive"></div>
+                <p class="card-rating-score">97% Positive</p>
+              </div>
+              <!-- <p class="card-stories-num">7 Stories</p> -->
+              <p class="card-date">
+                12/10/2021 <time class="card-time">13:51</time>
+              </p>
+              </div>
+
+            <div class="feed-content-container">
+              <p class="story-text">
+              Had a good meeting with Bob we talk about <strong>#Asensus</strong>. He liked the new
+              dashboard design
+              </p>
+
+              <div class="story-icon-container">
+                <img
+                class="svg"
+                src="public/thumbs-up-black.svg"
+                alt="thumb up icon"
+                />
+                <img
+                class="svg"
+                src="public/speech-bubble-black.svg"
+                alt="speech bubble icon"
+                />
+                <img class="svg margin-auto" src="public/share-black.svg" alt="share icon" />
+                <div class="category-tag">Dashboard</div>
+                <div class="category-tag">UX</div>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- Meetings Content -->
+        <div id="meetings" class="tab-content">
+           <div class="feed-card-header">
+              <h4 class="card-title">Adidas</h4>
+              <div class="card-score-container">
+                <div class="card-circle positive"></div>
+                <p class="card-rating-score">Rating: Good(60)</p>
+              </div>
+              <p class="card-stories-num">7 Stories</p>
+              <p class="card-date">
+                12/10/2021 <time class="card-time">13:51</time>
+              </p>
+              </div>
+
+            <div class="feed-content-container meetings-container">
+              <div class="meetings-content-container">
+                 <p class="meetings-header">Key Terms: </p>
+                <p class="meeting-width"> key CRM data, key decision, competitor activity, product feedback, client sentiment, strongest option ,NLP integration, ability, structure, AsensusGO</p>
+                <button class="view-btn margin-left-auto">View</button>
+              </div>
+
+              <div class="meetings-content-container">
+                <p class="meetings-header">Categories:</p>
+                <div class="meeting-width">
+                  <div class="category-tag inline">Dashboard</div>
+                <div class="category-tag inline">UX</div>
+                </div>
+
+              </div>
+
+              <div class="meetings-content-container">
+              <p class="meetings-header">Who: </p>
+              <p class="meeting-width">David Miranda <strong>(CTO)</strong>, Shehra Ali <strong>(CMO)</strong></p>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Data Visualation
       <section class="data-container">
@@ -318,18 +409,6 @@
         <article class="negative-cloud-container"></article>
       </section> -->
     </main>
-
-    <!-- SVG -->
-    <!-- <div class="svg-container">
-      <img class="svg" src="public/thumbs-up-black.svg" alt="thumb up icon" />
-      <img
-        class="svg"
-        src="public/speech-bubble-black.svg"
-        alt="speech bubble icon"
-      />
-      <img class="svg" src="public/share-black.svg" alt="share icon" />
-    </div> -->
-
     <script src="index.js"></script>
   </body>
 </html>
