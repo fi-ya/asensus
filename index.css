@@ -181,7 +181,7 @@ button.save-view-btn {
   background: #ffffff;
 }
 .status-bar-item {
-  width: 18%; /* 15.625rem; 250px*/
+  width: 15.625rem; /* 18%; 250px*/
   height: 100%;
   background: #ffffff;
   border: 0.25px solid #d0d0d0;
@@ -241,7 +241,6 @@ button.save-view-btn {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-
 .meetings {
   background-color: var(--nonary-color);
 }
@@ -263,20 +262,53 @@ button.save-view-btn {
   right: 8.8%;
   bottom: 24.21%;
 }
-.progress-bar {
+/* .progress-bar {
   position: relative;
   width: 201px;
   height: 8px;
-  /* left: 2px;
-  top: 0px; */
+} */
+.progress-bar{
+  position: relative;
+  display: flex;
+  width: 201px;
+  height:0.25rem;
+  margin: 0.25rem 0rem;
 }
-/* .negative-stories-bar {
-  accent-color: var(--red-color);
-} */
-/* progress {
-  accent-color: var(--nonary-color);
-} */
-
+.progress-bar-value{
+  position: relative;
+  /* width:75%; */
+  border-radius: 0.25rem;
+}
+.progress-bar-max{
+  position: relative;
+  /* width:25%; */
+  background: #E3E3E3;
+  border-radius: 0.25rem;
+}
+#meetings-progress-width{
+  width:25%;
+}
+#meetings-progress-max{
+  width:75%;
+}
+#av-sentiment-progress-width{
+  width:50%;
+}
+#av-sentiment-progress-max{
+  width:50%;
+}
+#positive-stories-progress-width{
+  width:75%;
+}
+#positive-stories-progress-max{
+  width:25%;
+}
+#negative-stories-progress-width{
+  width:30%;
+}
+#negative-stories-progress-max{
+  width:70%;
+}
 .progress-bar-description {
   position: relative;
   display: flex;
@@ -285,47 +317,22 @@ button.save-view-btn {
   align-items: center;
   width: 201px;
   /* height: 6px; */
-  /* left: 2px;
-  top: 13px; */
   font-size: 0.6875rem;
   line-height: 0.8125rem;
   color: #000000;
 }
 .progress-bar-result {
-  /* height: 13px; */
-  /* width: 21px; */
-  /* left: 180px;
-  top: -3.5px;
-  position: relative;
-  left: 89.55%;
-  right: 0%;
-  top: -58.33%;
-  bottom: -58.33%; */
   /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 0;
-  /* margin: 0px 10px; */
 }
 .progress-bar-label {
-  /* Previous period */
-  /* height: 13px;
-  width: 76px;
-  left: 0px;
-  top: -3.5px; */
-  /* position: static; */
-  /* left: 0%;
-  right: 62.19%;
-  top: -58.33%;
-  bottom: -58.33%; */
   /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
-  /* margin: 0px 10px; */
 }
-
-
 
 /* Story Feed */
 .feed-container {

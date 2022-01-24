@@ -109,8 +109,7 @@
           <div class="option-selected-container">
             <p class="live-option">
               EMEA
-              <span class="delete-icon">
-              </span>
+              <span class="delete-icon"> </span>
             </p>
           </div>
         </div>
@@ -161,19 +160,24 @@
             />
           </div>
           <div class="progress-bar-container">
-            <progress
+            <div class="progress-bar">
+              <div class="progress-bar-value meetings" id="meetings-progress-width"></div>
+              <div class="progress-bar-max" id="meetings-progress-max"></div>
+            </div>
+
+            <!-- <progress
               class="progress-bar"
               id="meetings-stats"
               value="75"
               max="100"
             >
               75%
-            </progress>
+            </progress> -->
             <div class="progress-bar-description">
               <label class="progress-bar-label" for="meetings-stats"
                 >Previous period</label
               >
-              <p class="progress-bar-result">75%</p>
+              <p class="progress-bar-result">25%</p>
             </div>
           </div>
         </article>
@@ -191,19 +195,25 @@
             />
           </div>
           <div class="progress-bar-container">
-            <progress
+
+            <div class="progress-bar">
+              <div class="progress-bar-value av-sentiment" id="av-sentiment-progress-width"></div>
+              <div class="progress-bar-max" id="av-sentiment-progress-width"></div>
+            </div>
+
+            <!-- <progress
               class="progress-bar"
               id="av-sentiments"
               value="75"
               max="100"
             >
               75%
-            </progress>
+            </progress> -->
             <div class="progress-bar-description">
               <label class="progress-bar-label" for="av-sentiments"
                 >Previous period</label
               >
-              <p class="progress-bar-result">75%</p>
+              <p class="progress-bar-result">50%</p>
             </div>
           </div>
         </article>
@@ -221,14 +231,18 @@
             />
           </div>
           <div class="progress-bar-container">
-            <progress
+            <div class="progress-bar">
+              <div class="progress-bar-value positive-stories" id="positive-stories-progress-width"></div>
+              <div class="progress-bar-max" id="positive-stories-progress-max"></div>
+            </div>
+            <!-- <progress
               class="progress-bar"
               id="positive-stories"
               value="75"
               max="100"
             >
               75%
-            </progress>
+            </progress> -->
             <div class="progress-bar-description">
               <label class="progress-bar-label" for="positive-stories"
                 >Previous period</label
@@ -251,27 +265,29 @@
             />
           </div>
           <div class="progress-bar-container">
-            <progress
+            <div class="progress-bar">
+              <div class="progress-bar-value negative-stories" id="negative-stories-progress-width"></div>
+              <div class="progress-bar-max" id="negative-stories-progress-max"></div>
+            </div>
+                        <!-- <progress
               class="progress-bar negative-stories-bar"
               id="negative-stories"
               value="75"
               max="100"
             >
               75%
-            </progress>
+            </progress> -->
             <div class="progress-bar-description">
               <label class="progress-bar-label" for="negative-stories"
                 >Previous period</label
               >
-              <p class="progress-bar-result">75%</p>
+              <p class="progress-bar-result">30%</p>
             </div>
           </div>
         </article>
       </section>
       <!-- Story/Meetings Feed -->
-      <section class="feed-container">
-
-      </section>
+      <section class="feed-container"></section>
       <!-- Data Visualation
       <section class="data-container">
         <article class="overall-sentiment-container"></article>
@@ -283,7 +299,7 @@
         <article class="positive-cloud-container"></article>
         <article class="negative-cloud-container"></article>
       </section> -->
-    </main> 
+    </main>
 
     <!-- SVG -->
     <!-- <div class="svg-container">
