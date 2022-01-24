@@ -103,14 +103,17 @@
       <form class="live-filer-form">
         <div class="live-filter-wrapper">
           <select name="regions" id="regions">
-            <option value="all-regions">All regions</option>
-            <option value="emea">EMEA</option>
+            <option value="all-regions">All regions </option>
+            <option value="emea">EMEA </option>
           </select>
           <div class="option-selected-container">
-            <p class="live-option">
-              EMEA
-              <span class="delete-icon"> </span>
-            </p>
+            <div class="option-selected">
+              <p class="live-option">EMEA
+              <button class="delete-filter-btn">
+                <img src="/public/delete.svg" alt="delete">
+              </button>
+              </p>
+              </div>
           </div>
         </div>
         <div class="live-filter-wrapper">
@@ -120,8 +123,23 @@
             <option value="client-retention">Client Retention</option>
           </select>
           <div class="option-selected-container">
-            <p class="live-option">Product Sales <span></span></p>
-            <p class="live-option">Client Retention <span></span></p>
+            <div class="option-selected">
+             <p class="live-option">Product Sales
+              <button class="delete-filter-btn">
+                <img src="/public/delete.svg" alt="delete">
+              </button>
+              </p>
+            </div>
+            <div class="option-selected">
+             <p class="live-option">Client Retention
+              <button class="delete-filter-btn">
+                <img src="/public/delete.svg" alt="delete">
+              </button>
+              </p>
+            </div>
+
+            <!-- <p class="live-option">Product Sales <span></span></p>
+            <p class="live-option">Client Retention <span></span></p> -->
           </div>
         </div>
         <div class="live-filter-wrapper">
@@ -130,14 +148,20 @@
             <option value="product-demo">Product Demo</option>
           </select>
           <div class="option-selected-container">
-            <p class="live-option">Product Demo <span></span></p>
+            <div class="option-selected">
+             <p class="live-option">Product Demo
+              <button class="delete-filter-btn">
+                <img src="/public/delete.svg" alt="delete">
+              </button>
+              </p>
+            </div>
+            <!-- <p class="live-option">Product Demo <span></span></p> -->
           </div>
         </div>
         <div>
           <button class="view-btn">Save view</button>
         </div>
 
-        <div class="live-filter-wrapper calender-container">
           Add Calender Here
         </div>
       </form>

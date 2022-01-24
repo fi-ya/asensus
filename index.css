@@ -153,7 +153,13 @@ button.view-btn {
   padding: 0.5em 0.75em;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 0.875rem;
-
+  cursor: pointer;
+}
+.option-selected {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
 }
 .option-selected-container {
   display: flex;
@@ -162,10 +168,13 @@ button.view-btn {
   justify-content: center;
   gap: 1rem;
 }
+
 .live-option {
   background-color: var(--quinary-color);
   border-radius: 0.3rem;
-  padding: 0.25em 2em 0.25em 0.5em;
+  padding: 0.25em 0.5em;
+  font-weight: bold;
+  font-size: 0.75rem;
 }
 .delete-icon {
   margin: 2rem 3rem;
@@ -465,13 +474,12 @@ button.view-btn {
   /* padding: 1em; */
   margin: 3rem auto;
 }
-.story-feed-btn{
-  outline:none;
-  border:none;
+.story-feed-btn {
+  outline: none;
+  border: none;
   cursor: pointer;
   background-color: transparent;
 }
-
 .margin-auto {
   margin-right: auto;
 }
@@ -480,7 +488,7 @@ button.view-btn {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap:0.25rem;
+  gap: 0.25rem;
   padding: 0.25em 0.5em;
   margin: 0.5rem 0.25rem;
   background-color: var(--quinary-color);
@@ -504,12 +512,18 @@ button.view-btn {
   font-weight: 700;
   width: 100px;
 }
-
 .meetings-container {
   height: 179px;
 }
 .margin-left-auto {
   margin-left: auto;
+}
+.delete-filter-btn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
 }
 /* -------------------------------------------------------------- */
 
