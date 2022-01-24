@@ -248,7 +248,7 @@ button.view-btn {
   bottom: 43%;
 }
 .svg {
-  width: 3rem;
+  width:100%;
   padding: 0.5em;
   border-radius: 0.5rem;
 }
@@ -461,6 +461,7 @@ button.view-btn {
   background: var(--secondary-color);
   height: 139px;
   padding: 1rem; /* 0.625rem; */
+  font-size: 0.75rem;
 }
 .story-text {
   line-height: 0.875rem;
@@ -471,14 +472,19 @@ button.view-btn {
   display: flex;
   justify-content: flex-start;
   align-content: center;
-  /* padding: 1em; */
+  gap: 1rem;
   margin: 3rem auto;
+}
+.story-svg{
+  width:100%
 }
 .story-feed-btn {
   outline: none;
   border: none;
   cursor: pointer;
   background-color: transparent;
+  /* height: 1.5rem; */
+  width: 1.5rem;
 }
 .margin-auto {
   margin-right: auto;
@@ -490,9 +496,10 @@ button.view-btn {
   align-items: center;
   gap: 0.25rem;
   padding: 0.25em 0.5em;
-  margin: 0.5rem 0.25rem;
+  margin: 1.5rem 0.25rem;
   background-color: var(--quinary-color);
   border-radius: 0.25rem;
+  font-weight: bold;
 }
 .inline {
   display: inline;
