@@ -287,7 +287,25 @@
         </article>
       </section>
       <!-- Story/Meetings Feed -->
-      <section class="feed-container"></section>
+      <section class="feed-container">
+
+        <!-- Tab Links -->
+        <div class="tab">
+          <button class="tab-links" onclick="openFeed(event, 'stories')">Stories</button>
+          <button class="tab-links" onclick="openFeed(event, 'meetings')">Meetings</button>
+        </div>
+        <!-- Tab Content -->
+
+        <div id="stories" class="tab-content">
+          <h3>Stories Feed</h3>
+          <p>insert - here </p>
+        </div>
+        <div id="meetings" class="tab-content">
+           <h3>Meetings Feed</h3>
+          <p>insert - here </p>
+        </div>
+
+      </section>
       <!-- Data Visualation
       <section class="data-container">
         <article class="overall-sentiment-container"></article>
