@@ -174,20 +174,15 @@ button.save-view-btn {
   flex-direction: row;
   align-items: flex-start;
   padding: 0 4rem;
-  position: relative; /*absolute*/
-  width: 91vw;
+  position: relative;
+  max-width: 90%;
   height: 8.375rem; /*134px*/
-  /* left:0px;
-  top: 242px; */
   gap: 1rem;
   background: #ffffff;
 }
 .status-bar-item {
-  position: static; /* static*/
-  width: 15.625rem; /*250px*/
-  height: 8.375rem; /*134px*/
-  left: 4rem; /*64px*/
-  top: 0px;
+  width: 18%; /* 15.625rem; 250px*/
+  height: 100%;
   background: #ffffff;
   border: 0.25px solid #d0d0d0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -195,136 +190,58 @@ button.save-view-btn {
   flex: none; /* The item is sized according to its width and height properties. It is fully inflexible: it neither shrinks nor grows in relation to the flex container. This is equivalent to setting "flex: 0 0 auto". */
   order: 0;
   flex-grow: 0;
-  margin: 0 1rem;
+  margin-right: 1rem;
 }
 .stats-bar-data {
-  position: absolute;
-  height: 72px;
-  width: 225.60975646972656px;
-  left: 24.3902587890625px;
+  position:relative;
+  /* height: 4.5rem; */
+  /* width: 225.60975646972656px; */
+  /* width:100%; */
+  left: 25px;
   top: 16px;
-  border-radius: 0;
+   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:1rem;
 }
 .status-title {
-  height: 16px;
-  width: 225.60975646972656px;
-  /* left: 24.3902587890625px;
-top: 16px; */
-  position: absolute;
+  /* height: 16px;
+  width: 225.60975646972656px; */
   left: 9.76%;
   right: 0%;
   top: 11.94%;
   bottom: 76.12%;
-
-  font-size: 14px;
-  line-height: 16px;
-
+  font-size: 0.875rem;
+  line-height: 1rem;
   color: #222222;
 }
 .stats-num {
-  height: 42px;
-  width: 49.99998474121094px;
-  /* left: 24.3902587890625px;
-  top: 46px; */
-  position: absolute;
+  /* height: 42px;
+  width: 49.99998474121094px; */
   left: 9.76%;
   right: 70.24%;
   top: 34.33%;
   bottom: 34.33%;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 2.25rem;
+  line-height: 2.625rem;
   color: #222222;
 }
 .svg-container {
+  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
   height: 3.125rem; /* 50px */
-  width: 3.125rem; /* 50px */
-  position: absolute;
-  /* left: 71.2%;
-  right: 8.8%;
-  top: 12.69%;
-  bottom: 50%; */
-  top: 1.063rem; /* 17px;*/
-  left: 11.125rem; /*178px;*/
+  width: 3.125rem; /* 50px*/
+  left: 71.2%;
+  bottom: 43%;
 }
-.progress-bar-container {
-  position: absolute;
-  height: 1.688rem; /* 27px;*/
-  width: 12.875rem; /* 206px;*/
-  left: 1.375rem; /*22px;*/
-  top: 6rem; /*96px;*/
-  font-size: 0.688rem;
-}
-.progress-bar {
-  position: absolute;
-  width: 201px;
-  height: 8px;
-  left: 2px;
-  top: 0px;
-}
-/* .negative-stories-bar {
-  accent-color: var(--red-color);
-}
-.meetings-bar {
-  accent-color: var(--nonary-color);
-} */
-
-.progress-bar-description {
-  position: absolute;
-  width: 201px;
-  height: 6px;
-  left: 2px;
-  top: 13px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  font-size: 11px;
-  line-height: 13px;
-  color: #000000;
-}
-.progress-bar-result {
-  height: 13px;
-  width: 21px;
-  left: 180px;
-  top: -3.5px;
-  position: static;
-  left: 89.55%;
-  right: 0%;
-  top: -58.33%;
-  bottom: -58.33%;
-  /* Inside auto layout */
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-  margin: 0px 10px;
-}
-.progress-bar-label {
-  /* Previous period */
-  height: 13px;
-  width: 76px;
-  left: 0px;
-  top: -3.5px;
-  position: static;
-  left: 0%;
-  right: 62.19%;
-  top: -58.33%;
-  bottom: -58.33%;
-  /* Inside auto layout */
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 10px;
-}
-
 .svg {
   width: 3rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
+
 .meetings {
   background-color: var(--nonary-color);
 }
@@ -337,6 +254,78 @@ top: 16px; */
 .negative-stories {
   background-color: var(--red-color);
 }
+.progress-bar-container {
+  position: relative;
+  /* height: 1.688rem; /* 27px;*/
+  /*width: 12.875rem; 206px; */
+  font-size: 0.688rem;
+  left: 8.8%;
+  right: 8.8%;
+  bottom: 24.21%;
+}
+.progress-bar {
+  position: relative;
+  width: 201px;
+  height: 8px;
+  /* left: 2px;
+  top: 0px; */
+}
+/* .negative-stories-bar {
+  accent-color: var(--red-color);
+} */
+/* progress {
+  accent-color: var(--nonary-color);
+} */
+
+.progress-bar-description {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 201px;
+  /* height: 6px; */
+  /* left: 2px;
+  top: 13px; */
+  font-size: 0.6875rem;
+  line-height: 0.8125rem;
+  color: #000000;
+}
+.progress-bar-result {
+  /* height: 13px; */
+  /* width: 21px; */
+  /* left: 180px;
+  top: -3.5px;
+  position: relative;
+  left: 89.55%;
+  right: 0%;
+  top: -58.33%;
+  bottom: -58.33%; */
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  /* margin: 0px 10px; */
+}
+.progress-bar-label {
+  /* Previous period */
+  /* height: 13px;
+  width: 76px;
+  left: 0px;
+  top: -3.5px; */
+  /* position: static; */
+  /* left: 0%;
+  right: 62.19%;
+  top: -58.33%;
+  bottom: -58.33%; */
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  /* margin: 0px 10px; */
+}
+
+
 
 /* Story Feed */
 .feed-container {
