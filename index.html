@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" type="text/css" href="/date-picker.css" />
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <title>Asensus</title>
   </head>
   <body>
@@ -162,8 +166,22 @@
           <button class="view-btn">Save view</button>
         </div>
 
-          Add Calender Here
+        <div id="reportrange" class="date-picker-container">
+
+        <!-- <i class="fa fa-calendar"></i>&nbsp;
+        -->
+        <span></span>
+
+              <img
+              class="margin-right-auto"
+                src="public/down-arrow-black.svg"
+                alt="drop down button"
+              />
+
+        <!-- <i class="fa fa-caret-down"></i> -->
+
         </div>
+
       </form>
     </div>
 
