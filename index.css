@@ -248,7 +248,7 @@ button.view-btn {
   bottom: 43%;
 }
 .svg {
-  width:100%;
+  width: 100%;
   padding: 0.5em;
   border-radius: 0.5rem;
 }
@@ -393,6 +393,15 @@ button.view-btn {
   /* border: 1px solid #000;
   border-top: none; */
 }
+.feed-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
 .feed-card-header {
   display: flex;
   justify-content: space-between;
@@ -402,6 +411,7 @@ button.view-btn {
   color: var(--secondary-color);
   height: 2.125rem;
   padding: 1rem; /* 0.625rem; */
+  width: 100%;
 }
 .card-title {
   font-weight: 700;
@@ -460,6 +470,7 @@ button.view-btn {
 .feed-content-container {
   background: var(--secondary-color);
   height: 139px;
+  width: 100%;
   padding: 1rem; /* 0.625rem; */
   font-size: 0.75rem;
 }
@@ -475,8 +486,8 @@ button.view-btn {
   gap: 1rem;
   margin: 3rem auto;
 }
-.story-svg{
-  width:100%
+.story-svg {
+  width: 100%;
 }
 .story-feed-btn {
   outline: none;
