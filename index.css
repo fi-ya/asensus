@@ -465,6 +465,12 @@ button.view-btn {
   /* padding: 1em; */
   margin: 3rem auto;
 }
+.story-feed-btn{
+  outline:none;
+  border:none;
+  cursor: pointer;
+  background-color: transparent;
+}
 
 .margin-auto {
   margin-right: auto;
