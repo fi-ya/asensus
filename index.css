@@ -151,7 +151,6 @@ button.view-btn {
   color: var(--secondary-color);
   border-radius: 0.25rem;
   padding: 0.5em 0.75em;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 0.875rem;
   cursor: pointer;
 }
