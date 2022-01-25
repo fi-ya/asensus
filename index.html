@@ -12,9 +12,18 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="date-picker.css" />
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
+    ></script>
     <title>Asensus</title>
   </head>
   <body>
@@ -107,17 +116,18 @@
       <form class="live-filer-form">
         <div class="live-filter-wrapper">
           <select name="regions" id="regions">
-            <option value="all-regions">All regions </option>
-            <option value="emea">EMEA </option>
+            <option value="all-regions">All regions</option>
+            <option value="emea">EMEA</option>
           </select>
           <div class="option-selected-container">
             <div class="option-selected">
-              <p class="live-option">EMEA
-              <button class="delete-filter-btn">
-                <img src="/public/delete.svg" alt="delete">
-              </button>
+              <p class="live-option">
+                EMEA
+                <button class="delete-filter-btn">
+                  <img src="/public/delete.svg" alt="delete" />
+                </button>
               </p>
-              </div>
+            </div>
           </div>
         </div>
         <div class="live-filter-wrapper">
@@ -128,17 +138,19 @@
           </select>
           <div class="option-selected-container">
             <div class="option-selected">
-             <p class="live-option">Product Sales
-              <button class="delete-filter-btn">
-                <img src="/public/delete.svg" alt="delete">
-              </button>
+              <p class="live-option">
+                Product Sales
+                <button class="delete-filter-btn">
+                  <img src="/public/delete.svg" alt="delete" />
+                </button>
               </p>
             </div>
             <div class="option-selected">
-             <p class="live-option">Client Retention
-              <button class="delete-filter-btn">
-                <img src="/public/delete.svg" alt="delete">
-              </button>
+              <p class="live-option">
+                Client Retention
+                <button class="delete-filter-btn">
+                  <img src="/public/delete.svg" alt="delete" />
+                </button>
               </p>
             </div>
 
@@ -153,10 +165,11 @@
           </select>
           <div class="option-selected-container">
             <div class="option-selected">
-             <p class="live-option">Product Demo
-              <button class="delete-filter-btn">
-                <img src="/public/delete.svg" alt="delete">
-              </button>
+              <p class="live-option">
+                Product Demo
+                <button class="delete-filter-btn">
+                  <img src="/public/delete.svg" alt="delete" />
+                </button>
               </p>
             </div>
             <!-- <p class="live-option">Product Demo <span></span></p> -->
@@ -167,39 +180,38 @@
         </div>
 
         <div id="reportrange" class="date-picker-container">
-
-        <!-- <i class="fa fa-calendar"></i>&nbsp;
+          <!-- <i class="fa fa-calendar"></i>&nbsp;
         -->
-        <span></span>
+          <span></span>
 
-              <img
-              class="margin-right-auto"
-                src="public/down-arrow-black.svg"
-                alt="drop down button"
-              />
+          <img
+            class="margin-right-auto"
+            src="public/down-arrow-black.svg"
+            alt="drop down button"
+          />
 
-        <!-- <i class="fa fa-caret-down"></i> -->
-
+          <!-- <i class="fa fa-caret-down"></i> -->
         </div>
-
       </form>
     </div>
 
     <!-- Changes depending on nav option selected -->
     <main>
-      <section class="stats-bar-container margin-top">
+      <section class="stats-bar-container">
         <!-- Meeting Stats -->
         <article class="status-bar-item">
-          <div class="stats-bar-data">
-            <p class="status-title">Meetings</p>
-            <p class="stats-num">27</p>
-          </div>
-          <div class="svg-container">
-            <img
-              class="svg meetings"
-              src="public/handshake-white.svg"
-              alt="handshake"
-            />
+          <div class="story-data-wrapper">
+            <div class="stats-bar-data">
+              <p class="status-title">Meetings</p>
+              <p class="stats-num">27</p>
+            </div>
+            <div class="svg-container">
+              <img
+                class="svg meetings"
+                src="public/handshake-white.svg"
+                alt="handshake"
+              />
+            </div>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
@@ -228,16 +240,18 @@
         </article>
         <!-- Av. Sentiment Stats -->
         <article class="status-bar-item">
-          <div class="stats-bar-data">
-            <p class="status-title">Av. Sentiment</p>
-            <p class="stats-num">87</p>
-          </div>
-          <div class="svg-container">
-            <img
-              class="svg av-sentiment"
-              src="public/speech-bubble-white.svg"
-              alt="handshake"
-            />
+          <div class="story-data-wrapper">
+            <div class="stats-bar-data">
+              <p class="status-title">Av. Sentiment</p>
+              <p class="stats-num">87</p>
+            </div>
+            <div class="svg-container">
+              <img
+                class="svg av-sentiment"
+                src="public/speech-bubble-white.svg"
+                alt="handshake"
+              />
+            </div>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
@@ -269,16 +283,18 @@
         </article>
         <!-- Positive Stories Stats -->
         <article class="status-bar-item">
-          <div class="stats-bar-data">
-            <p class="status-title">Positive Stories</p>
-            <p class="stats-num">67</p>
-          </div>
-          <div class="svg-container">
-            <img
-              class="svg positive-stories"
-              src="public/smiley-face-white.svg"
-              alt="handshake"
-            />
+          <div class="story-data-wrapper">
+            <div class="stats-bar-data">
+              <p class="status-title">Positive Stories</p>
+              <p class="stats-num">67</p>
+            </div>
+            <div class="svg-container">
+              <img
+                class="svg positive-stories"
+                src="public/smiley-face-white.svg"
+                alt="handshake"
+              />
+            </div>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
@@ -309,16 +325,18 @@
         </article>
         <!-- Negative Stories Stats -->
         <article class="status-bar-item">
-          <div class="stats-bar-data">
-            <p class="status-title">Negative Stories</p>
-            <p class="stats-num">67</p>
-          </div>
-          <div class="svg-container">
-            <img
-              class="svg negative-stories"
-              src="public/sad-face-white.svg"
-              alt="handshake"
-            />
+          <div class="story-data-wrapper">
+            <div class="stats-bar-data">
+              <p class="status-title">Negative Stories</p>
+              <p class="stats-num">67</p>
+            </div>
+            <div class="svg-container">
+              <img
+                class="svg negative-stories"
+                src="public/sad-face-white.svg"
+                alt="handshake"
+              />
+            </div>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
@@ -347,18 +365,20 @@
             </div>
           </div>
         </article>
-         <!-- Negative Stories Stats -->
+        <!-- Negative Stories Stats -->
         <article class="status-bar-item">
-          <div class="stats-bar-data">
-            <p class="status-title">Negative Stories</p>
-            <p class="stats-num">67</p>
-          </div>
-          <div class="svg-container">
-            <img
-              class="svg negative-stories"
-              src="public/sad-face-white.svg"
-              alt="handshake"
-            />
+          <div class="story-data-wrapper">
+            <div class="stats-bar-data">
+              <p class="status-title">Negative Stories</p>
+              <p class="stats-num">67</p>
+            </div>
+            <div class="svg-container">
+              <img
+                class="svg negative-stories"
+                src="public/sad-face-white.svg"
+                alt="handshake"
+              />
+            </div>
           </div>
           <div class="progress-bar-container">
             <div class="progress-bar">
@@ -393,7 +413,11 @@
       <section class="feed-container">
         <!-- Tab Links -->
         <div class="tab">
-          <button class="tab-links" onclick="openFeed(event, 'stories')" id="defaultOpen">
+          <button
+            class="tab-links"
+            onclick="openFeed(event, 'stories')"
+            id="defaultOpen"
+          >
             Stories
           </button>
           <button class="tab-links" onclick="openFeed(event, 'meetings')">
@@ -419,25 +443,32 @@
 
             <div class="feed-content-container">
               <p class="story-text">
-              Had a good meeting with Bob we talk about <strong>#Asensus</strong>. He liked the new
-              dashboard design
+                Had a good meeting with Bob we talk about
+                <strong>#Asensus</strong>. He liked the new dashboard design
               </p>
 
               <div class="story-icon-container">
-                <button class="story-feed-btn"><img
-                class="story-svg"
-                src="public/thumbs-up-black.svg"
-                alt="thumb up icon"
-                /></button>
-                  <button class="story-feed-btn">
-                    <img
-                class="story-svg"
-                src="public/speech-bubble-black.svg"
-                alt="speech bubble icon"
-                />
-                  </button>
+                <button class="story-feed-btn">
+                  <img
+                    class="story-svg"
+                    src="public/thumbs-up-black.svg"
+                    alt="thumb up icon"
+                  />
+                </button>
+                <button class="story-feed-btn">
+                  <img
+                    class="story-svg"
+                    src="public/speech-bubble-black.svg"
+                    alt="speech bubble icon"
+                  />
+                </button>
 
-                <button class="story-feed-btn margin-auto"><img class="story-svg" src="public/share-black.svg" alt="share icon" />
+                <button class="story-feed-btn margin-auto">
+                  <img
+                    class="story-svg"
+                    src="public/share-black.svg"
+                    alt="share icon"
+                  />
                 </button>
 
                 <div class="category-tag">Dashboard</div>
@@ -447,7 +478,7 @@
           </div>
 
           <!-- Second story -->
-                    <div class="feed-wrapper">
+          <div class="feed-wrapper">
             <div class="feed-card-header">
               <h4 class="card-title">Adidas</h4>
               <div class="card-score-container">
@@ -462,25 +493,32 @@
 
             <div class="feed-content-container">
               <p class="story-text">
-              Had a good meeting with Bob we talk about <strong>#Asensus</strong>. He liked the new
-              dashboard design
+                Had a good meeting with Bob we talk about
+                <strong>#Asensus</strong>. He liked the new dashboard design
               </p>
 
               <div class="story-icon-container">
-                <button class="story-feed-btn"><img
-                class="story-svg"
-                src="public/thumbs-up-black.svg"
-                alt="thumb up icon"
-                /></button>
-                  <button class="story-feed-btn">
-                    <img
-                class="story-svg"
-                src="public/speech-bubble-black.svg"
-                alt="speech bubble icon"
-                />
-                  </button>
+                <button class="story-feed-btn">
+                  <img
+                    class="story-svg"
+                    src="public/thumbs-up-black.svg"
+                    alt="thumb up icon"
+                  />
+                </button>
+                <button class="story-feed-btn">
+                  <img
+                    class="story-svg"
+                    src="public/speech-bubble-black.svg"
+                    alt="speech bubble icon"
+                  />
+                </button>
 
-                <button class="story-feed-btn margin-auto"><img class="story-svg" src="public/share-black.svg" alt="share icon" />
+                <button class="story-feed-btn margin-auto">
+                  <img
+                    class="story-svg"
+                    src="public/share-black.svg"
+                    alt="share icon"
+                  />
                 </button>
 
                 <div class="category-tag">Dashboard</div>
@@ -490,7 +528,7 @@
           </div>
 
           <!-- Third story -->
-                    <div class="feed-wrapper">
+          <div class="feed-wrapper">
             <div class="feed-card-header">
               <h4 class="card-title">Adidas</h4>
               <div class="card-score-container">
@@ -505,25 +543,32 @@
 
             <div class="feed-content-container">
               <p class="story-text">
-              Had a good meeting with Bob we talk about <strong>#Asensus</strong>. He liked the new
-              dashboard design
+                Had a good meeting with Bob we talk about
+                <strong>#Asensus</strong>. He liked the new dashboard design
               </p>
 
               <div class="story-icon-container">
-                <button class="story-feed-btn"><img
-                class="story-svg"
-                src="public/thumbs-up-black.svg"
-                alt="thumb up icon"
-                /></button>
-                  <button class="story-feed-btn">
-                    <img
-                class="story-svg"
-                src="public/speech-bubble-black.svg"
-                alt="speech bubble icon"
-                />
-                  </button>
+                <button class="story-feed-btn">
+                  <img
+                    class="story-svg"
+                    src="public/thumbs-up-black.svg"
+                    alt="thumb up icon"
+                  />
+                </button>
+                <button class="story-feed-btn">
+                  <img
+                    class="story-svg"
+                    src="public/speech-bubble-black.svg"
+                    alt="speech bubble icon"
+                  />
+                </button>
 
-                <button class="story-feed-btn margin-auto"><img class="story-svg" src="public/share-black.svg" alt="share icon" />
+                <button class="story-feed-btn margin-auto">
+                  <img
+                    class="story-svg"
+                    src="public/share-black.svg"
+                    alt="share icon"
+                  />
                 </button>
 
                 <div class="category-tag">Dashboard</div>
@@ -531,15 +576,13 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <!-- Meetings Content -->
         <div id="meetings" class="tab-content">
-
           <!-- First Meeting -->
           <div class="feed-wrapper">
-           <div class="feed-card-header">
+            <div class="feed-card-header">
               <h4 class="card-title">Adidas</h4>
               <div class="card-score-container">
                 <div class="card-circle positive"></div>
@@ -553,9 +596,13 @@
 
             <div class="feed-content-container meetings-container">
               <div class="meetings-content-container">
-                 <p class="meetings-header">Key Terms: </p>
-                  <p class="meeting-width"> key CRM data, key decision, competitor activity, product feedback, client sentiment, strongest option ,NLP integration, ability, structure, AsensusGO</p>
-                  <button class="view-btn margin-left-auto">View</button>
+                <p class="meetings-header">Key Terms:</p>
+                <p class="meeting-width">
+                  key CRM data, key decision, competitor activity, product
+                  feedback, client sentiment, strongest option ,NLP integration,
+                  ability, structure, AsensusGO
+                </p>
+                <button class="view-btn margin-left-auto">View</button>
               </div>
 
               <div class="meetings-content-container">
@@ -567,15 +614,18 @@
               </div>
 
               <div class="meetings-content-container">
-                <p class="meetings-header">Who: </p>
-                <p class="meeting-width">David Miranda <strong>(CTO)</strong>, Shehra Ali <strong>(CMO)</strong></p>
+                <p class="meetings-header">Who:</p>
+                <p class="meeting-width">
+                  David Miranda <strong>(CTO)</strong>, Shehra Ali
+                  <strong>(CMO)</strong>
+                </p>
               </div>
             </div>
           </div>
 
           <!-- Second Meeting -->
           <div class="feed-wrapper">
-           <div class="feed-card-header">
+            <div class="feed-card-header">
               <h4 class="card-title">Adidas</h4>
               <div class="card-score-container">
                 <div class="card-circle positive"></div>
@@ -589,9 +639,13 @@
 
             <div class="feed-content-container meetings-container">
               <div class="meetings-content-container">
-                 <p class="meetings-header">Key Terms: </p>
-                  <p class="meeting-width"> key CRM data, key decision, competitor activity, product feedback, client sentiment, strongest option ,NLP integration, ability, structure, AsensusGO</p>
-                  <button class="view-btn margin-left-auto">View</button>
+                <p class="meetings-header">Key Terms:</p>
+                <p class="meeting-width">
+                  key CRM data, key decision, competitor activity, product
+                  feedback, client sentiment, strongest option ,NLP integration,
+                  ability, structure, AsensusGO
+                </p>
+                <button class="view-btn margin-left-auto">View</button>
               </div>
 
               <div class="meetings-content-container">
@@ -603,16 +657,18 @@
               </div>
 
               <div class="meetings-content-container">
-                <p class="meetings-header">Who: </p>
-                <p class="meeting-width">David Miranda <strong>(CTO)</strong>, Shehra Ali <strong>(CMO)</strong></p>
+                <p class="meetings-header">Who:</p>
+                <p class="meeting-width">
+                  David Miranda <strong>(CTO)</strong>, Shehra Ali
+                  <strong>(CMO)</strong>
+                </p>
               </div>
             </div>
           </div>
-
 
           <!-- Third Meeting -->
           <div class="feed-wrapper">
-           <div class="feed-card-header">
+            <div class="feed-card-header">
               <h4 class="card-title">Adidas</h4>
               <div class="card-score-container">
                 <div class="card-circle positive"></div>
@@ -626,9 +682,13 @@
 
             <div class="feed-content-container meetings-container">
               <div class="meetings-content-container">
-                 <p class="meetings-header">Key Terms: </p>
-                  <p class="meeting-width"> key CRM data, key decision, competitor activity, product feedback, client sentiment, strongest option ,NLP integration, ability, structure, AsensusGO</p>
-                  <button class="view-btn margin-left-auto">View</button>
+                <p class="meetings-header">Key Terms:</p>
+                <p class="meeting-width">
+                  key CRM data, key decision, competitor activity, product
+                  feedback, client sentiment, strongest option ,NLP integration,
+                  ability, structure, AsensusGO
+                </p>
+                <button class="view-btn margin-left-auto">View</button>
               </div>
 
               <div class="meetings-content-container">
@@ -640,13 +700,14 @@
               </div>
 
               <div class="meetings-content-container">
-                <p class="meetings-header">Who: </p>
-                <p class="meeting-width">David Miranda <strong>(CTO)</strong>, Shehra Ali <strong>(CMO)</strong></p>
+                <p class="meetings-header">Who:</p>
+                <p class="meeting-width">
+                  David Miranda <strong>(CTO)</strong>, Shehra Ali
+                  <strong>(CMO)</strong>
+                </p>
               </div>
             </div>
           </div>
-
-
         </div>
       </section>
       <!-- Data Visualation

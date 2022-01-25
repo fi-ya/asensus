@@ -100,6 +100,10 @@ input[type='search']:focus {
   justify-content: flex-start;
   align-items: center;
 }
+/* main {
+  margin: 0 4rem;
+  width: 100%;
+} */
 .main-nav {
   padding: 1rem 0;
 }
@@ -121,9 +125,9 @@ input[type='search']:focus {
 .margin-left-lg {
   margin-left: 4rem;
 }
-.margin-top {
+/* .margin-top {
   margin-top: 2rem;
-}
+} */
 /* Live Filter */
 .live-filter-container {
   background-color: var(--senary-color);
@@ -183,16 +187,23 @@ button.view-btn {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 0 4rem;
-  position: relative;
-  max-width: 90%;
+  margin: 0 4rem;
+  /* padding: 0 4rem; */
+  /* max-width: 90%; */
+  width: 100%;
   height: 8.375rem; /*134px*/
   gap: 1rem;
   background: #ffffff;
+  margin-top: 2rem;
+
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
 }
 .status-bar-item {
-  width: 15.625rem; /* 18%; 250px*/
-  height: 100%;
+  width: 14.625rem; /* 18%; 250px*/
+  /* height: 100%; */
   background: #ffffff;
   border: 0.25px solid #d0d0d0;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -203,24 +214,19 @@ button.view-btn {
   /* margin-right: 1rem; */
 }
 .stats-bar-data {
-  position: relative;
-  /* height: 4.5rem; */
-  /* width: 225.60975646972656px; */
-  /* width:100%; */
-  left: 25px;
-  top: 16px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 0.5rem;
+  height: 4.5rem;
+  /* width: 225.60975646972656px; */
+  /* width:100%; */
+  padding-left: 1.2em;
+  padding-top: 1em;
 }
 .status-title {
   /* height: 16px;
   width: 225.60975646972656px; */
-  left: 9.76%;
-  right: 0%;
-  top: 11.94%;
-  bottom: 76.12%;
   font-size: 0.875rem;
   line-height: 1rem;
   color: #222222;
@@ -228,23 +234,25 @@ button.view-btn {
 .stats-num {
   /* height: 42px;
   width: 49.99998474121094px; */
-  left: 9.76%;
-  right: 70.24%;
-  top: 34.33%;
-  bottom: 34.33%;
   font-size: 2.25rem;
   line-height: 2.625rem;
   color: #222222;
 }
 .svg-container {
-  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
   height: 3.125rem; /* 50px */
   width: 3.125rem; /* 50px*/
-  left: 71.2%;
-  bottom: 43%;
+  /* left: 71.2%;
+  bottom: 43%; */
+  margin-right: 1.1rem;
+  margin-top: 1.1rem;
+}
+.story-data-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
 }
 .svg {
   width: 100%;
@@ -264,13 +272,14 @@ button.view-btn {
   background-color: var(--red-color);
 }
 .progress-bar-container {
-  position: relative;
   /* height: 1.688rem; /* 27px;*/
   /*width: 12.875rem; 206px; */
   font-size: 0.688rem;
-  left: 8.8%;
+  /* left: 8.8%;
   right: 8.8%;
-  bottom: 24.21%;
+  bottom: 24.21%; */
+  margin-left: 1.2rem;
+  margin-top: 1.1rem;
 }
 /* .progress-bar {
   position: relative;
@@ -278,19 +287,16 @@ button.view-btn {
   height: 8px;
 } */
 .progress-bar {
-  position: relative;
   display: flex;
-  width: 201px;
+  width: 192px;
   height: 0.25rem;
-  margin: 0.25rem 0rem;
+  margin: 0.4rem 0rem;
 }
 .progress-bar-value {
-  position: relative;
   /* width:75%; */
   border-radius: 0.25rem;
 }
 .progress-bar-max {
-  position: relative;
   /* width:25%; */
   background: #e3e3e3;
   border-radius: 0.25rem;
@@ -320,16 +326,17 @@ button.view-btn {
   width: 70%;
 }
 .progress-bar-description {
-  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 201px;
+  width: 192px;
   /* height: 6px; */
   font-size: 0.6875rem;
   line-height: 0.8125rem;
   color: #000000;
+  margin-bottom: 1rem;
+  padding: 0.1em 0em;
 }
 .progress-bar-result {
   /* Inside auto layout */
@@ -346,7 +353,6 @@ button.view-btn {
 
 /* Story Feed */
 .feed-container {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -356,7 +362,7 @@ button.view-btn {
   background: var(--senary-color);
 }
 .tab {
-  overflow: hidden;
+  /* overflow: hidden; */
   border-bottom: 1px solid var(--secondary-color);
   border-radius: 0.25rem;
   background-color: var(--senary-color);
@@ -385,7 +391,6 @@ button.view-btn {
 }
 .tab-content {
   display: none;
-  position: relative;
   width: 100%;
   height: 100%;
   padding: 0.375em 0.75em;
@@ -393,7 +398,6 @@ button.view-btn {
   border-top: none; */
 }
 .feed-wrapper {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
