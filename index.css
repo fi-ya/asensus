@@ -158,6 +158,7 @@ button.view-btn {
   padding: 0.5em 0.75em;
   font-size: 0.875rem;
   cursor: pointer;
+  border:none;
 }
 .option-selected {
   display: flex;
@@ -192,7 +193,7 @@ button.view-btn {
   /* max-width: 90%; */
   width: 100%;
   height: 100%;
-  /* height: 8.375rem; *//*134px*/
+  /* height: 8.375rem; */ /*134px*/
   gap: 1rem;
   background: #ffffff;
   margin-top: 2rem;
@@ -200,7 +201,6 @@ button.view-btn {
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-
 }
 .status-bar-item {
   width: 14.625rem; /* 18%; 250px*/
