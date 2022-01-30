@@ -66,7 +66,10 @@ input[type='search'] {
   color: inherit;
   border: 1px solid transparent;
   border-radius: inherit;
+  width: 100%;
+  outline: none;
 }
+
 button[type='submit'] {
   text-indent: -999px;
   overflow: hidden;
@@ -91,8 +94,8 @@ input[type='search']::placeholder {
 
 button[type='submit']:focus,
 input[type='search']:focus {
-  box-shadow: 0 0 3px 0 #1183d6;
-  border-color: #1183d6;
+  /* box-shadow: 0 0 3px 0 #1183d6; */
+  /* border-color: #1183d6; */
   outline: none;
 }
 /* Top Nav Styles */
