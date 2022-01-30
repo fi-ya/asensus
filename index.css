@@ -38,19 +38,24 @@ header {
   justify-content: flex-end;
   font-size: calc(10px + 2vmin);
   gap: 2rem;
-  border-bottom: 0.2rem solid var(--secondary-color);
+  border-bottom: 0.1rem solid var(--secondary-color);
+  padding-top: 1rem;
 }
 .margin-left {
   margin-right: auto;
   margin-left: 2rem;
+  margin-bottom: -0.5rem
 }
 .margin-right {
   margin-right: 4rem;
 }
 .search-form {
   display: flex;
+  justify-content: space-between;
   background-color: var(--secondary-color);
   border-radius: 0.3rem;
+  width: 19rem;
+  height:2.285rem;
 }
 input[type='search'] {
   border: none;
@@ -71,7 +76,7 @@ button[type='submit'] {
   border: 1px solid transparent;
   border-radius: inherit;
   background: white
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    url("public/search.svg")
     no-repeat center;
   cursor: pointer;
   opacity: 1;
@@ -80,6 +85,11 @@ button[type='submit'] {
 /* button[type="submit"]:hover {
   opacity: 1;
 } */
+input[type="search"]::placeholder {
+  color: var(--septenary-color);
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 
 button[type='submit']:focus,
 input[type='search']:focus {
@@ -105,7 +115,7 @@ input[type='search']:focus {
   width: 100%;
 } */
 .main-nav {
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem 0;
 }
 .main-nav a {
   display: flex;
