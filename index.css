@@ -187,13 +187,40 @@ cursor: pointer;
 border: none;
 width: 63px;
 height: 1rem;
-margin: 0 10px;
+/* margin: 0 10px; */
 font-size: 0.875rem;
 font-weight: bold;
 line-height: 1rem;
 color: var(--secondary-color);
-text-align: center;
+font-family: var(--main-font);
+
 }
+.meetings-view-btn-container{
+  display: flex;
+justify-content: center;
+align-items: center;
+  height: 35px;
+width: 49px;
+border-radius: 0.25rem;
+padding: 9px;
+background-color: var(--quaternary-color);
+
+}
+
+.meetings-view-btn{
+  background-color: inherit;
+outline: none;
+cursor: pointer;
+border: none;
+  font-size: 0.875rem;
+font-weight: bold;
+line-height: 1rem;
+color: var(--secondary-color);
+text-align: center;
+font-family: var(--main-font);
+}
+
+
 .option-selected {
   display: flex;
   flex-direction: row;
