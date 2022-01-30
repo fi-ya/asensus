@@ -1,7 +1,7 @@
 .date-picker-container {
-      display: flex;
-    justify-content: space-between;
-    align-content: center;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
   background: #fff;
   cursor: pointer;
   padding: 0.375em 0.2em 0.375em 0.5625em;
@@ -14,7 +14,7 @@
 .date-picker-container span {
   /* padding-left:1rem; */
   /* padding-right:0.5rem; */
-  width: 14rem;/*10.25rem;*/
+  width: 15rem; /*10.25rem;*/
   height: 1rem;
   font-weight: 600;
   font-size: 0.875rem;
@@ -25,11 +25,10 @@
    height:0.6rem;
 width: 0.67rem;
 } */
-.picker-down-arrow{
-  height:0.6rem;
-width: 0.67rem;
-margin: 0.5rem
-
+.picker-down-arrow {
+  height: 0.6rem;
+  width: 0.67rem;
+  margin: 0.5rem;
 }
 .daterangepicker {
   position: absolute;
